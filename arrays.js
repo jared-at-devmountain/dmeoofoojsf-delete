@@ -79,3 +79,49 @@ console.log(pokemon)
 backpack.unshift('jynx statue')
 console.log('backpack after adding the statue:')
 console.log(backpack)
+
+//you continue on your journey,
+//but your backpack is so heavy
+//that you decide you are going to ditch your statue in the woods
+//it was kind of weird anyway
+backpack.shift()
+
+console.log('backpack after getting rid of the statue:')
+console.log(backpack)
+
+//you find a wild butterfree
+//which is your favorite pokemon!
+//you use up one pokeball to catch it
+//however, once you've caught it, you realize you have 7
+//pokemon, which is illegal
+//you're really hungy anyway, so you decide eat one of your pidgeys
+
+//make a variable for butterfree
+//cut out a pokeball using any array method
+//splice out pidgey and put in butterfree where the pidgey was at
+//save the new spliced array (with pidgey in it) to a variable called lunch
+let favePokemon = 'butterfree'
+backpack.shift()
+let lunch = pokemon.splice(3, 1, favePokemon)
+
+console.log('here is my backpack after catching butterfree:')
+console.log(backpack)
+console.log('and here are my pokemon:')
+console.log(pokemon)
+console.log('and here is my lunch:')
+console.log(lunch)
+
+//you're walking along, and you stumble upon a rare stone called the 'pidgey-stone'
+//that immediately causes all of your pidgeys to evolve into pidgeotto
+
+//loop through all of your pokemon:
+//if the pokemon you are currently looking at in the loop is a pidgey
+//replace it's value in the array with 'pidgeotto'
+for (let i = 0; i < pokemon.length; i++) {
+    if (pokemon[i] === 'pidgey') {
+        pokemon[i] = 'pidgeotto'
+    }
+}
+
+console.log('after the evolution event, my pokemon are now:')
+console.log(pokemon)
